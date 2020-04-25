@@ -18,19 +18,22 @@ INSERT INTO JOB (IdJob, JobName) VALUES (2, 'Junior Developer');
 INSERT INTO JOB (IdJob, JobName) VALUES (3, 'Mid Developer');
 INSERT INTO JOB (IdJob, JobName) VALUES (4, 'Senior Developer');
 
---#Status
+--#RequestStatus
 INSERT INTO REQUESTSTATUS (IdRequestStatus, StatusName) VALUES (1, 'Oczekujący');
 INSERT INTO REQUESTSTATUS (IdRequestStatus, StatusName) VALUES (2, 'Odrzucony');
 INSERT INTO REQUESTSTATUS (IdRequestStatus, StatusName) VALUES (3, 'Zaakceptowany');
 
 --#RequestType
-INSERT INTO RequestType (IdRequestType, Type, Object) VALUES (1, 'Nadgodziny', '');
-INSERT INTO RequestType (IdRequestType, Type, Object) VALUES (2, 'Niebecność', '');
+INSERT INTO RequestType (IdRequestType, Type, Object) VALUES (1, 'Nadgodziny', 'Wnioskowanie');
+INSERT INTO RequestType (IdRequestType, Type, Object) VALUES (2, 'Nadgodziny', 'Anulowanie');
+INSERT INTO RequestType (IdRequestType, Type, Object) VALUES (3, 'Niebecność', 'Wnioskowanie');
+INSERT INTO RequestType (IdRequestType, Type, Object) VALUES (4, 'Niebecność', 'Anulowanie');
 
 --#AbsenceType
 INSERT INTO AbsenceType (IdAbsenceType, AbsenceType) VALUES (1, 'Urlop');
 INSERT INTO AbsenceType (IdAbsenceType, AbsenceType) VALUES (2, 'Urlop rodzicielski');
 INSERT INTO AbsenceType (IdAbsenceType, AbsenceType) VALUES (3, 'Bezpłatny urlop');
+INSERT INTO AbsenceType (IdAbsenceType, AbsenceType) VALUES (4, 'Urlop na żądanie');
 
 
 --Role
